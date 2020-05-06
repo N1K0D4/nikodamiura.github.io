@@ -57,6 +57,11 @@ section.st {
 section.st h3 {
     font-weight: 400;
 }
+.btnIn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(212, 39, 76);
+}
 @keyframes moveDown {
     0% {
         height: 0;
