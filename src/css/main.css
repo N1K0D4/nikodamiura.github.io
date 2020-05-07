@@ -2,65 +2,76 @@
 a {text-decoration: none;}
 html {overflow:hidden; height:100vh;}
 body {height:100%;background-color:#EF5350;animation: colorHex 10s infinite alternate-reverse ease;}
-section {display: flex;margin: 10px 0 0 0;align-items: center;flex-direction: column;}
-header {width:100%;}
 .container {
     position: relative;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin: 0 auto;
-    padding: 5px;
+    padding: 0 5px;
     align-items: center;
     justify-content: center;
 }
-.preloaderOwn {
-    display: flex;
+.qLineUp {
     width: 100%;
-    height: 48px;
+    height: 46px;
     animation: moveDown 3s infinite alternate-reverse ease-in-out;
     background-color: #f66;
     box-shadow: 0 0 10px 1px #5e0237;
 }
-.preloaderTwo {
-    position: absolute;
-    display: flex;
+.qLineDown {
     width: 100%;
-    height: 48px;
-    margin: -48px 0 0 0;
+    height: 46px;
+    margin: -46px 0 0 0;
     animation: colorHex 3s infinite alternate-reverse ease-in-out;
     background-color: #f66;
     box-shadow: 0 0 10px 1px #5e0237;
 }
-.pImage {
-    user-select: none;
+.qOneCommander {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: center;
+}
+.qImage {
+    margin: -40px 0 40px 0;
+}
+.aParalase {
     width: 400px;
-    border: 12px solid #f66;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+}
+.pImage {
+    width: 400px;
+    height: 400px;
+    background: url('https://avatars0.githubusercontent.com/u/59442237?s=460&u=015b51db4496b6c185b5fdcc298d68bf47b05201&v=4') no-repeat center;
+    background-size: contain;
+    border: 12px solid rgb(41,45,62);
     border-radius: 50%;
     box-shadow: 0 0 20px 10px #9c0c60;
     opacity: .92;
     transition: transform .2s ease-out;
 }
-.aParalase {
-    perspective: 1000px;
-    transform-style: preserve-3d;
-}
-section.st {
-    width: 450px;
-    height: 200px;
-    margin: 40px 0 0 0;
-    padding: 5px;
-    background-color: transparent;
-    box-shadow: inset 0 0 10px 2px purple;
+.qText {
+    position: relative;
+    display: flex;
+    max-width: 520px;
+    width: 100%;
+    padding: 40px 20px;
+    align-items: center;
     justify-content: center;
+    border: 2px solid rgb(41,45,62);
+    border-radius: 60px;
+    box-shadow: inset 0 0 10px 6px rgb(41,45,62), 0 0 10px 2px rgb(32,35,49);
 }
-section.st h3 {
-    font-weight: 400;
-}
-.btnIn {
+h3.aBtn {
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: rgb(212, 39, 76);
+    background-color: rgb(41,45,62);
+    box-shadow: 0 0 10px 6px rgb(41,45,62);
 }
 @keyframes moveDown {
     0% {
